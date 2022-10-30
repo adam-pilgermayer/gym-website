@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+.footr-logo__img {
+  display: none;
+}
+
+html {
+  font-family: "quicksand", sans-serif;
+  background-color: #1F1F1F;
+  background-image: url("../assets/Hexagon.svg");
+  background-position: fixed;
+  background-size: contain;
+  color: #E8E8E8;
+  font-size: 10px;
+  min-width: 300px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #E8E8E8;
+  text-decoration: none;
+}
+
+.hedr {
+  height: calc(100vh - 60px);
+}
+.hedr-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 60px 20px 80px;
+  height: inherit;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hedr-hero-welcome, .hedr-hero-location, .hedr-hero-promo {
+  font-family: "rubik", sans-serif;
+}
+.hedr-hero-welcome {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hedr-hero-welcome span {
+  text-transform: uppercase;
+  color: #EB831A;
+}
+.hedr-hero-location {
+  font-size: 2.5rem;
+}
+.hedr-hero-promo {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  margin: 30px 0;
+}
+.hedr-hero-promo em {
+  color: #EB831A;
+  text-decoration: underline;
+}
+.hedr-hero .btn-promo {
+  background-color: #b86410;
+  color: #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px #060606;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+}
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.main-content {
+  text-align: center;
+}
+.main-content .main-title {
+  color: #EB831A;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 50px 0;
+}
+.main-content .main-title::before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 2px;
+  background-color: #EB831A;
+  margin: 4px auto;
+}
+.main-content .main-about .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 768px;
+  gap: 30px;
+  margin: 0 auto;
+}
+.main-content .main-about__text {
+  font-size: 1.8rem;
+  font-family: "rubik", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+.main-content .main-about__img {
+  width: 100%;
+  max-width: 400px;
+}
+.main-content .main-team .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 768px;
+  gap: 30px;
+  margin: 0 auto;
+}
+.main-content .main-team .trainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.main-content .main-team .trainer-img-box {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 2px solid #EB831A;
+  border-radius: 2px;
+  box-shadow: 4px 4px 6px #121212;
+}
+.main-content .main-team .trainer .trainer-img {
+  width: 100px;
+  scale: 2;
+  margin-top: 30px;
+}
+.main-content .main-team .trainer .trainer-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.main-content .main-team .trainer .trainer-desc {
+  max-width: 180px;
+  font-size: 1.8rem;
+}
+.main-content .main-services .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-content .main-services .service-item {
+  margin: 16px;
+}
+.main-content .main-services .service-item__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 40px 0 20px;
+}
+.main-content .main-services .service-item__img {
+  width: 260px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #525252;
+}
+.main-content .main-membership .membership-desc {
+  color: #EB831A;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.main-content .main-membership .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.main-content .main-membership .membership-card {
+  width: 300px;
+  height: 470px;
+  background-color: #171717;
+  padding: 10px;
+}
+.main-content .main-membership .membership-card__type {
+  font-size: 2.5rem;
+}
+.main-content .main-membership .membership-card__price {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.main-content .main-membership .membership-card__price::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  margin: 10px auto;
+  background-color: grey;
+}
+.main-content .main-membership .membership-card__price span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.main-content .main-membership .membership-card__advantages {
+  font-size: calc(1.8rem - 20%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 24px auto;
+  width: 80%;
+}
+.main-content .main-membership .membership-card__advantage {
+  padding: 10px 0 10px 30px;
+}
+.main-content .main-membership .membership-card__order-btn {
+  text-transform: uppercase;
+}
+.main-content .main-membership .membership-card:nth-child(1) {
+  box-shadow: 0 0 4px #16B83A;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(1) {
+  background: url("../assets/tick_essential.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(2) {
+  background: url("../assets/tick_essential.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(3) {
+  background: url("../assets/tick_essential.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(4) {
+  background: url("../assets/tick_essential.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(5) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(6) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(7) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__advantage:nth-child(8) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(1) .membership-card__order-btn {
+  background-color: inherit;
+  color: #16B83A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 2px solid #16B83A;
+}
+.main-content .main-membership .membership-card:nth-child(2) {
+  box-shadow: 0 0 4px #A3C4F4;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(1) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(2) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(3) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(4) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(5) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(6) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(7) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__advantage:nth-child(8) {
+  background: url("../assets/tick_plat.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(2) .membership-card__order-btn {
+  background-color: inherit;
+  color: #A3C4F4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 2px solid #A3C4F4;
+}
+.main-content .main-membership .membership-card:nth-child(3) {
+  box-shadow: 0 0 4px #C8CC0F;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(1) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(2) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(3) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(4) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(5) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(6) {
+  background: url("../assets/tick_gold.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(7) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(8) {
+  background: url("../assets/x.svg") no-repeat left center;
+}
+.main-content .main-membership .membership-card:nth-child(3) .membership-card__order-btn {
+  background-color: inherit;
+  color: #C8CC0F;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 2px solid #C8CC0F;
+}

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #1F1F1F;
+  box-shadow: 0 2px 4px #1a1a1a;
+  z-index: 5;
+}
+.navbar-logo__box {
+  background-image: url("../assets/logo.png");
+  background-size: cover;
+  background-position-y: center;
+  height: 60px;
+  width: 120px;
+  margin-left: 10px;
+}
+.navbar .burger {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.navbar .burger .line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #E8E8E8;
+  margin: 6px 0;
+  transition: all 300ms ease-in-out;
+}
+.navbar .on .line:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 7px);
+}
+.navbar .on .line:nth-child(2) {
+  opacity: 0;
+}
+.navbar .on .line:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -7px);
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: -260px;
+  overflow: hidden;
+  opacity: 0;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #1F1F1F;
+  box-shadow: 0 4px 4px #1a1a1a;
+  transition: all 300ms ease-in-out;
+}
+.navbar-menu__item {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #363636;
+}
+.navbar-menu__link {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+}
+.navbar .toggled {
+  top: 60px;
+  opacity: 1;
+}

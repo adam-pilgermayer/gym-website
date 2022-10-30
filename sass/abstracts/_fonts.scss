@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "quicksand";
+	src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+
+@font-face {
+	font-family: "rubik";
+	src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+
+$main-font: "quicksand";
+$secondary-font: "rubik";
+
+$size-xs: 1.8rem;
+$size-s: 2rem;
+$size-m: 2.5rem;
+$size-l: 3rem;
+$size-xl: 4rem;

@@ -1,0 +1,340 @@
+@use "./abstracts/" as *;
+
+.footr-logo__img {
+	display: none;
+}
+
+html {
+	font-family: $main-font, sans-serif;
+	background-color: $main-bg-color;
+	background: {
+		image: url('../assets/Hexagon.svg');
+		position: fixed;
+		size: contain;
+	}
+	color: $main-text-color;
+	font-size: 10px;
+	min-width: 300px;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: $main-text-color;
+	text-decoration: none;
+}
+
+.hedr {
+	height: calc(100vh - 60px);
+
+	&-hero {
+		@include flex(flex-start, space-between, column);
+		padding: 60px 20px 80px;
+		height: inherit;
+		width: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url("../assets/hero-image.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+		&-welcome,
+		&-location,
+		&-promo {
+			font-family: $secondary-font, sans-serif;
+		}
+
+		&-welcome {
+			font-size: $size-l;
+			font-weight: 600;
+
+			span {
+				text-transform: uppercase;
+				color: $secondary-color;
+			}
+		}
+
+		&-location {
+			font-size: $size-m;
+		}
+
+		&-promo {
+			font-size: $size-s;
+			text-transform: uppercase;
+			line-height: 2.5rem;
+			margin: 30px 0;
+
+			em {
+				color: $secondary-color;
+				text-decoration: underline;
+			}
+		}
+
+		.btn-promo {
+			@include btn(
+				darken($secondary-color, 12),
+				$main-text-color,
+				10px,
+				10px,
+				2px,
+				2px 2px 4px darken($main-bg-color, 10),
+				$size-s,
+				600
+			);
+		}
+	}
+}
+
+.wrapper {
+	margin: 0 20px;
+}
+
+.main-content {
+	text-align: center;
+
+	.main-title {
+		color: $secondary-color;
+		text-transform: uppercase;
+		font-size: $size-l;
+		font-weight: 500;
+		margin: 50px 0;
+
+		&::before {
+			content: "";
+			display: block;
+			height: 20px;
+			width: 2px;
+			background-color: $secondary-color;
+			margin: 4px auto;
+		}
+	}
+
+	.main-about {
+		.flex-container {
+			@include flex(center, center, column);
+			max-width: 768px;
+			gap: 30px;
+			margin: 0 auto;
+		}
+
+		&__text {
+			font-size: $size-xs;
+			font-family: $secondary-font, sans-serif;
+			font-weight: 300;
+			line-height: 24px;
+			text-align: left;
+		}
+
+		&__img {
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+
+	.main-team {
+		.flex-container {
+			@include flex(center, center, row, wrap);
+			max-width: 768px;
+			gap: 30px;
+			margin: 0 auto;
+		}
+
+		.trainer {
+			@include flex(center, center, column);
+			gap: 10px;
+
+			&-img-box {
+				width: 150px;
+				height: 150px;
+				overflow: hidden;
+				border: 2px solid $secondary-color;
+				border-radius: 2px;
+				box-shadow: 4px 4px 6px darken($main-bg-color, 5);
+			}
+			.trainer-img {
+				width: 100px;
+				scale: 2;
+				margin-top: 30px;
+			}
+
+			.trainer-name {
+				font-size: $size-xs;
+				font-weight: 700;
+			}
+
+			.trainer-desc {
+				max-width: 180px;
+				font-size: $size-xs;
+			}
+		}
+	}
+
+	.main-services {
+		.flex-container {
+			@include flex(center, center, row, wrap);
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		.service-item {
+			margin: 16px;
+
+			&__title {
+				font-size: $size-s;
+				text-transform: uppercase;
+				margin: 40px 0 20px;
+			}
+
+			&__img {
+				width: 260px;
+				border-radius: 2px;
+				box-shadow: 0 0 8px lighten($main-bg-color, 20);
+			}
+		}
+	}
+
+	.main-membership {
+		.membership-desc {
+			color: $secondary-color;
+			font-size: $size-s;
+			margin-bottom: 50px;
+		}
+
+		.flex-container {
+			@include flex(center, center, row, wrap);
+			gap: 40px;
+		}
+
+		.membership-card {
+			width: 300px;
+			height: 470px;
+			background-color: darken($main-bg-color, 3);
+			padding: 10px;
+
+			&__type {
+				font-size: $size-m;
+			}
+
+			&__price {
+				font-size: $size-m;
+				margin: 10px 0;
+
+				&::after {
+					content: "";
+					display: block;
+					width: 60%;
+					height: 1px;
+					margin: 10px auto;
+					background-color: grey;
+				}
+
+				span {
+					font-size: $size-l;
+					font-weight: 600;
+				}
+			}
+
+			&__advantages {
+				font-size: calc($size-xs - 20%);
+				@include flex(flex-start, center, column);
+				margin: 24px auto;
+				width: 80%;
+			}
+
+			&__advantage {
+				padding: 10px 0 10px 30px;
+			}
+
+			&__order-btn {
+				text-transform: uppercase;
+			}
+
+			&:nth-child(1) {
+				box-shadow: 0 0 4px $card-color-essential;
+
+				@for $i from 1 through 4 {
+					.membership-card__advantage:nth-child(#{$i}) {
+						background: url("../assets/tick_essential.svg")
+							no-repeat
+							left
+							center;
+					}
+				}
+
+				@for $i from 5 through 8 {
+					.membership-card__advantage:nth-child(#{$i}) {
+						background: url("../assets/x.svg") no-repeat left center;
+					}
+				}
+
+				.membership-card__order-btn {
+					@include btn(
+						inherit,
+						$card-color-essential,
+						10px,
+						10px,
+						2px,
+						none,
+						$size-xs,
+						600,
+						2px solid $card-color-essential
+					);
+				}
+			}
+
+			&:nth-child(2) {
+				box-shadow: 0 0 4px $card-color-platinum;
+
+				@for $i from 1 through 8 {
+					.membership-card__advantage:nth-child(#{$i}) {
+						background: url("../assets/tick_plat.svg") no-repeat left center;
+					}
+				}
+
+				.membership-card__order-btn {
+					@include btn(
+						inherit,
+						$card-color-platinum,
+						10px,
+						10px,
+						2px,
+						none,
+						$size-xs,
+						600,
+						2px solid $card-color-platinum
+					);
+				}
+			}
+
+			&:nth-child(3) {
+				box-shadow: 0 0 4px $card-color-gold;
+
+				@for $i from 1 through 6 {
+					.membership-card__advantage:nth-child(#{$i}) {
+						background: url("../assets/tick_gold.svg") no-repeat left center;
+					}
+				}
+
+				@for $i from 7 through 8 {
+					.membership-card__advantage:nth-child(#{$i}) {
+						background: url("../assets/x.svg") no-repeat left center;
+					}
+				}
+
+				.membership-card__order-btn {
+					@include btn(
+						inherit,
+						$card-color-gold,
+						10px,
+						10px,
+						2px,
+						none,
+						$size-xs,
+						600,
+						2px solid $card-color-gold
+					);
+				}
+			}
+		}
+	}
+}
