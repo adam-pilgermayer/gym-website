@@ -6,21 +6,22 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 20px;
-  box-shadow: 0 -4px 4px #1a1a1a;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
 }
 .footr-logo__box {
   width: 150px;
   margin: 0 auto;
 }
 .footr-logo__img {
-  width: inherit;
+  width: 150px;
 }
 .footr-col {
   padding: 14px;
 }
 .footr-col__title {
   width: max-content;
-  margin: 0 auto 40px;
+  margin: 50px auto 20px;
   font-size: 1.8rem;
 }
 .footr-col .contact-btn {
@@ -38,11 +39,17 @@
   display: block;
   width: max-content;
   margin: 30px auto 0;
+  transition: 150ms;
+}
+.footr-col .contact-btn:hover {
+  background-color: #92500d;
 }
 .footr-info__item {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-left: 10px;
   gap: 12px;
 }
@@ -54,5 +61,59 @@
   font-size: 1.5rem;
 }
 .footr-info .info-content .working-hours {
-  padding: 4px 0;
+  padding: 4px;
+}
+.footr .payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  margin: 2rem;
+}
+.footr-menu {
+  width: max-content;
+  margin: 6px auto;
+}
+.footr-menu__item {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 6px;
+}
+.footr .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.footr .social-links .social-link path {
+  transition: 150ms;
+}
+.footr .social-links .social-link:hover path {
+  fill: #EB831A;
+}
+@media (min-width: 1080px) {
+  .footr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 20px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 20rem auto 0;
+  }
+  .footr-logo__box {
+    margin: 0;
+  }
+}
+
+.copyright {
+  font-size: 1.5rem;
+  width: max-content;
+  margin: 20px auto;
 }

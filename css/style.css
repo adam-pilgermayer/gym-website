@@ -71,6 +71,10 @@ a {
   font-size: 2rem;
   font-weight: 600;
   border: none;
+  transition: 150ms;
+}
+.hedr-hero .btn-promo:hover {
+  background-color: #92500d;
 }
 
 .wrapper {

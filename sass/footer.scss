@@ -4,7 +4,9 @@
 	@include flex(center, center, column);
 	padding: 20px;
 
-	box-shadow: 0 -4px 4px darken($main-bg-color, 2%);
+	font-family: $secondary-font;
+	font-weight: 300;
+
 
 	&-logo__box {
 		width: 150px;
@@ -12,7 +14,7 @@
 	}
 
 	&-logo__img {
-		width: inherit;
+		width: 150px;
 	}
 
 	&-col {
@@ -20,7 +22,7 @@
 
 		&__title {
 			width: max-content;
-			margin: 0 auto 40px;
+			margin: 50px auto 20px;
 			font-size: $size-xs;
 		}
 
@@ -38,14 +40,17 @@
 			display: block;
 			width: max-content;
 			margin: 30px auto 0;
+			transition: 150ms;
+
+			&:hover {
+				background-color: darken($secondary-color, 20%);
+			}
 		}
 	}
 
 	&-info {
 		&__item {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
+			@include flex(center, flex-start, row);
 			margin-left: 10px;
 			gap: 12px;
 		}
@@ -59,8 +64,61 @@
 			font-size: $size-2xs;
 
 			.working-hours {
-				padding: 4px 0;
+				padding: 4px;
 			}
 		}
 	}
+
+	.payment-methods {
+		@include flex(center, center, row);
+		gap: 4rem;
+		margin: 2rem;
+	}
+
+	&-menu {
+		width: max-content;
+		margin: 6px auto;
+
+		&__item {
+			font-size: $size-2xs;
+			text-align: center;
+			padding: 6px;
+		}
+	}
+
+	.social-links {
+		@include flex(center, center, row);
+		gap: 2rem;
+
+		.social-link {
+			path {
+				transition: 150ms;
+			}
+
+			&:hover {
+				path {
+					fill: $secondary-color;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-1080) {
+		@include flex(flex-start, center, row);
+        flex-basis: 20px;
+        width: 100%;
+        max-width: 1300px;
+        margin: 20rem auto 0;
+        
+
+        &-logo__box {
+            margin: 0;
+        }
+    }
+}
+
+.copyright {
+	font-size: $size-2xs;
+	width: max-content;
+	margin: 20px auto;
 }

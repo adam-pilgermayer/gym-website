@@ -76,6 +76,12 @@ a {
 				$size-s,
 				600
 			);
+
+			transition: 150ms;
+
+			&:hover {
+                background-color: darken($secondary-color, 20%);
+            }
 		}
 	}
 }
