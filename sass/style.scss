@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	font-family: $main-font, sans-serif;
+	font-family: $main-font;
 	background-color: $main-bg-color;
 	color: $main-text-color;
 }
@@ -35,7 +35,7 @@ a {
 		&-welcome,
 		&-location,
 		&-promo {
-			font-family: $secondary-font, sans-serif;
+			font-family: $secondary-font;
 		}
 
 		&-welcome {
@@ -114,7 +114,7 @@ a {
 
 		&__text {
 			font-size: $size-xs;
-			font-family: $secondary-font, sans-serif;
+			font-family: $secondary-font;
 			font-weight: 300;
 			line-height: 24px;
 			text-align: left;
@@ -160,7 +160,7 @@ a {
 			.trainer-desc {
 				max-width: 180px;
 				font-size: $size-xs;
-				font-family: "rubik";
+				font-family: $secondary-font;
 				font-weight: 300;
 			}
 		}

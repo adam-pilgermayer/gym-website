@@ -1,18 +1,7 @@
-@font-face {
-	font-family: "quicksand";
-	src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400&display=swap");
 
-
-@font-face {
-	font-family: "rubik";
-	src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
-}
-
-
-$main-font: "quicksand";
-$secondary-font: "rubik";
-
+$main-font: "Quicksand", sans-serif;
+$secondary-font: "Rubik", sans-serif;
 
 $size-2xs: 1.5rem;
 $size-xs: 1.8rem;

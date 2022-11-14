@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "quicksand";
-  src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "rubik";
-  src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Rubik:wght@300;400&display=swap");
 html {
   font-size: 12px;
   min-width: 300px;
@@ -13,7 +6,7 @@ html {
 }
 
 body {
-  font-family: "quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #1F1F1F;
   color: #E8E8E8;
 }
@@ -42,7 +35,7 @@ a {
   background-attachment: fixed;
 }
 .hedr-hero-welcome, .hedr-hero-location, .hedr-hero-promo {
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .hedr-hero-welcome {
   font-size: 3rem;
@@ -114,7 +107,7 @@ a {
 }
 .main-content .main-about__text {
   font-size: 1.8rem;
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   line-height: 24px;
   text-align: left;
@@ -161,7 +154,7 @@ a {
 .main-content .main-team .trainer .trainer-desc {
   max-width: 180px;
   font-size: 1.8rem;
-  font-family: "rubik";
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
 .main-content .main-services .flex-container {
@@ -435,7 +428,7 @@ a {
 }
 .main-content .main-news .article-loader-btn {
   margin: 24px 0;
-  font-family: "quicksand";
+  font-family: "Quicksand", sans-serif;
   cursor: pointer;
   background-color: #b86410;
   color: #E8E8E8;
