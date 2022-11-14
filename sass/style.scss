@@ -1,12 +1,6 @@
 @use "./abstracts/" as *;
 
-
-.footr-logo__img {
-	display: none;
-}
-
 html {
-
 	font-size: 12px;
 	min-width: 300px;
 	scroll-behavior: smooth;
@@ -166,6 +160,8 @@ a {
 			.trainer-desc {
 				max-width: 180px;
 				font-size: $size-xs;
+				font-family: "rubik";
+				font-weight: 300;
 			}
 		}
 	}
@@ -217,7 +213,7 @@ a {
 			transition: 300ms;
 
 			&:hover {
-				transform: translateY(-10px);
+				transform: translateY(-4px);
 			}
 
 			&__type {
@@ -329,16 +325,14 @@ a {
 			&:nth-child(3) {
 				box-shadow: 0 0 4px $card-color-gold;
 
-				@for $i from 1 through 6 {
+				@for $i from 1 through 7 {
 					.membership-card__advantage:nth-child(#{$i}) {
 						background: url("../assets/tick_gold.svg") no-repeat left center;
 					}
 				}
 
-				@for $i from 7 through 8 {
-					.membership-card__advantage:nth-child(#{$i}) {
-						background: url("../assets/x.svg") no-repeat left center;
-					}
+				.membership-card__advantage:nth-child(8) {
+					background: url("../assets/x.svg") no-repeat left center;
 				}
 
 				.membership-card__order-btn {
@@ -350,7 +344,7 @@ a {
 						2px,
 						none,
 						$size-xs,
-						600,
+						700,
 						2px solid $card-color-gold
 					);
 

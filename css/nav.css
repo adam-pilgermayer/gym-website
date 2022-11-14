@@ -57,6 +57,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   position: absolute;
+  padding: 0 20px 0 10px;
   top: -260px;
   overflow: hidden;
   visibility: hidden;
@@ -88,7 +89,6 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 20px 0 10px;
   }
   .navbar .burger {
     display: none;
@@ -110,7 +110,7 @@
     border: none;
   }
   .navbar .navbar-menu__link {
-    padding: 30px 8px;
+    padding: 30px 10px;
     transition: 150ms;
   }
   .navbar .navbar-menu__link:hover {

@@ -1,9 +1,6 @@
 @use "./abstracts/" as *;
 
 
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1200px;
-
 
 .navbar {
 	@include flex(center, space-between);
@@ -12,7 +9,7 @@ $breakpoint-desktop: 1200px;
 	height: 60px;
 	width: 100%;
 	background-color: $main-bg-color;
-	box-shadow: 0 2px 4px darken($main-bg-color, 2);
+	box-shadow: 0 2px 4px darken($main-bg-color, 2%);
 	z-index: 5;
 
 	&-logo__box {
@@ -56,6 +53,7 @@ $breakpoint-desktop: 1200px;
 	&-menu {
 		@include flex(center, flex-start, column);
 		position: absolute;
+		padding: 0 20px 0 10px;
 		top: -260px;
 		overflow: hidden;
 		visibility: hidden;
@@ -84,9 +82,8 @@ $breakpoint-desktop: 1200px;
 		visibility: visible;
 	}
 
-	@media (min-width: $breakpoint-tablet) { 
+	@media (min-width: $breakpoint-tablet) {
 		@include flex(center, space-between, row);
-		padding: 0 20px 0 10px;
 
 		.burger {
 			display: none;
@@ -106,7 +103,7 @@ $breakpoint-desktop: 1200px;
 			}
 
 			&__link {
-				padding: 30px 8px;
+				padding: 30px 10px;
 				transition: 150ms;
 				&:hover {
 					background-color: darken($main-bg-color, 3%);

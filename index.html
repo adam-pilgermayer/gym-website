@@ -9,8 +9,9 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
 	<body>
 		<nav class="navbar">
@@ -29,10 +30,10 @@
 					<a href="#nav-membership" class="navbar-menu__link">Membership</a>
 				</li>
 				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Contact</a>
+					<a href="#" class="navbar-menu__link">Schedule</a>
 				</li>
 				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Gallery</a>
+					<a href="#" class="navbar-menu__link">Contact</a>
 				</li>
 			</ul>
 			<div class="burger">
@@ -240,7 +241,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="main-news">
+				<!-- <section class="main-news">
 					<h3 class="main-title">News</h3>
 					<section class="article-collector">
 						<article class="news-box">
@@ -294,7 +295,7 @@
 						</article>
 					</section>
 					<button class="article-loader-btn">SHOW MORE</button>
-				</section>
+				</section> -->
 				<!--
 					<section class="main-gallery">
 					<h3 class="main-title">Gallery</h3>
@@ -303,66 +304,107 @@
 				<section class="main-progress">
 					<div class="progress-bar">
 						<div class="progress-bar__item">
-							<span class="bold-num">300+</span> <span class="progress-name">machines owned</span>
+							<span class="bold-num">300+</span>
+							<span class="progress-name">machines owned</span>
 						</div>
 						<div class="progress-bar__item">
-							<span class="bold-num">350+</span> <span class="progress-name">happy clients</span>
+							<span class="bold-num">350+</span>
+							<span class="progress-name">happy clients</span>
 						</div>
 						<div class="progress-bar__item">
-							<span class="bold-num">100+</span> <span class="progress-name">clients a day</span>
+							<span class="bold-num">100+</span>
+							<span class="progress-name">clients a day</span>
 						</div>
 					</div>
 				</section>
 			</main>
-			<footer class="footr">
-				<div class="footr-logo__box">
-					<img
-						class="footr-logo__img"
-						src="./assets/logo.png"
-						alt="our gym's logo" />
-				</div>
-				<section class="footr-col">
-					<h3 class="footr-col__title">INFORMATION</h3>
-					<ul class="footr-info">
-						<li class="footr-info__item">
-							<span><!--location logo--></span> Anywhere, Any street 2
-						</li>
-						<li class="footr-info__item">
-							<span><!--phone logo--></span> (123) 456 7890
-						</li>
-						<li class="footr-info__item">
-							<span><!--clock logo--></span> Mon - Fri: 6AM - 10PM
-						</li>
-						<li class="footr-info__item">Sat -Sun: 6AM - 8PM</li>
-						<li class="footr-info__item">On Holidays: 6AM - 4PM</li>
-					</ul>
-					<a href="#" class="contact-btn">CONTACT</a>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">PAYMENT METHODS</h3>
-					<figure class="payment-method">mastercard</figure>
-					<figure class="payment-method">visa</figure>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">OVERVIEW</h3>
-					<ul class="footr-menu">
-						<li class="footr-menu__item">About</li>
-						<li class="footr-menu__item">Team</li>
-						<li class="footr-menu__item">Services</li>
-						<li class="footr-menu__item">Membership</li>
-						<li class="footr-menu__item">Contact</li>
-						<li class="footr-menu__item">Gallery</li>
-					</ul>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">FOLLOW US</h3>
-					<figure class="social-link">fb</figure>
-					<figure class="social-link">twitter</figure>
-					<figure class="social-link">insta</figure>
-				</section>
-				<p class="copyright">Adam Pilgermayer &copy; 2022</p>
-			</footer>
 		</div>
+		<footer class="footr">
+			<div class="footr-logo__box">
+				<img
+					class="footr-logo__img"
+					src="./assets/logo.png"
+					alt="our gym's logo" />
+			</div>
+			<section class="footr-col">
+				<h3 class="footr-col__title">INFORMATION</h3>
+				<section class="footr-info">
+					<div class="footr-info__item">
+						<span class="info-logo"
+							><img src="./assets/location.svg" alt=""
+						/></span>
+						<div class="info-content">Anywhere, Any street 2</div>
+					</div>
+					<div class="footr-info__item">
+						<span class="info-logo"
+							><img src="./assets/phone.svg" alt=""
+						/></span>
+						<div class="info-content">(123) 456 7890</div>
+					</div>
+					<div class="footr-info__item">
+						<span class="info-logo"
+							><img src="./assets/time.svg" alt=""
+						/></span>
+						<div class="info-content">
+							<p class="working-hours">Mon - Fri: 6AM - 10PM</p>
+							<p class="working-hours">Sat -Sun: 6AM - 8PM</p>
+							<p class="working-hours">On Holidays: 6AM - 4PM</p>
+						</div>
+					</div>
+				</section>
+				<a href="./contact.html" class="contact-btn">CONTACT</a>
+			</section>
+			<section class="footr-col">
+				<h3 class="footr-col__title">PAYMENT METHODS</h3>
+				<figure class="payment-method">
+					<img src="./assets/visa.svg" alt="you can pay with visa" />
+				</figure>
+				<figure class="payment-method">
+					<img
+						src="./assets/mastercard.svg"
+						alt="you can pay with mastercard" />
+				</figure>
+			</section>
+			<section class="footr-col">
+				<h3 class="footr-col__title">OVERVIEW</h3>
+				<ul class="footr-menu">
+					<li class="footr-menu__item">About</li>
+					<li class="footr-menu__item">Team</li>
+					<li class="footr-menu__item">Services</li>
+					<li class="footr-menu__item">Membership</li>
+					<li class="footr-menu__item">Contact</li>
+					<li class="footr-menu__item">Gallery</li>
+				</ul>
+			</section>
+			<section class="footr-col">
+				<h3 class="footr-col__title">FOLLOW US</h3>
+				<figure class="social">
+					<a href="#" class="social-link"
+						><img
+							class="socal-link-icon"
+							src="./assets/facebook.svg"
+							alt="a link to the gym's official facebook page"
+					/></a>
+				</figure>
+				<figure class="social">
+					<a href="#" class="social-link"
+						><img
+							class="socal-link-icon"
+							src="./assets/instagram.svg"
+							alt="a link to the gym's official instagram page"
+					/></a>
+				</figure>
+				<figure class="social">
+					<a href="#" class="social-link"
+						><img
+							class="socal-link-icon"
+							src="./assets/twitter.svg"
+							alt="a link to the gym's official twitter page"
+					/></a>
+				</figure>
+			</section>
+			<p class="copyright">Adam Pilgermayer &copy; 2022</p>
+		</footer>
 
 		<script src="./js/nav.js"></script>
 	</body>

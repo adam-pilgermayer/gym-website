@@ -6,10 +6,6 @@
   font-family: "rubik";
   src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
 }
-.footr-logo__img {
-  display: none;
-}
-
 html {
   font-size: 12px;
   min-width: 300px;
@@ -165,6 +161,8 @@ a {
 .main-content .main-team .trainer .trainer-desc {
   max-width: 180px;
   font-size: 1.8rem;
+  font-family: "rubik";
+  font-weight: 300;
 }
 .main-content .main-services .flex-container {
   display: flex;
@@ -212,7 +210,7 @@ a {
   transition: 300ms;
 }
 .main-content .main-membership .membership-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-4px);
 }
 .main-content .main-membership .membership-card__type {
   font-size: 2.5rem;
@@ -360,7 +358,7 @@ a {
   background: url("../assets/tick_gold.svg") no-repeat left center;
 }
 .main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(7) {
-  background: url("../assets/x.svg") no-repeat left center;
+  background: url("../assets/tick_gold.svg") no-repeat left center;
 }
 .main-content .main-membership .membership-card:nth-child(3) .membership-card__advantage:nth-child(8) {
   background: url("../assets/x.svg") no-repeat left center;
@@ -375,7 +373,7 @@ a {
   border-radius: 2px;
   box-shadow: none;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   border: 2px solid #C8CC0F;
 }
 .main-content .main-membership .membership-card:nth-child(3) .membership-card__order-btn:hover {

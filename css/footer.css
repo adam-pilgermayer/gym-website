@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../../assets/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+.footr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  box-shadow: 0 -4px 4px #1a1a1a;
+}
+.footr-logo__box {
+  width: 150px;
+  margin: 0 auto;
+}
+.footr-logo__img {
+  width: inherit;
+}
+.footr-col {
+  padding: 14px;
+}
+.footr-col__title {
+  width: max-content;
+  margin: 0 auto 40px;
+  font-size: 1.8rem;
+}
+.footr-col .contact-btn {
+  background-color: #b86410;
+  color: #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px #060606;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  display: block;
+  width: max-content;
+  margin: 30px auto 0;
+}
+.footr-info__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  gap: 12px;
+}
+.footr-info .info-logo {
+  display: block;
+  padding: 10px;
+}
+.footr-info .info-content {
+  font-size: 1.5rem;
+}
+.footr-info .info-content .working-hours {
+  padding: 4px 0;
+}
