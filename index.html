@@ -72,7 +72,8 @@
 						<img
 							src="./assets/our_gym.jpg"
 							alt="our gym with full of modern machines"
-							class="main-about__img" />
+							class="main-about__img"
+							loading="lazy" />
 					</div>
 				</section>
 				<section id="nav-team" class="main-team">
@@ -83,7 +84,8 @@
 								<img
 									src="./assets/trainer1.svg"
 									alt="An image of John Doe, our very first trainer"
-									class="trainer-img" />
+									class="trainer-img"
+									loading="lazy" />
 							</div>
 							<h4 class="trainer-name">Trainer #1</h4>
 							<figcaption class="trainer-desc">
@@ -96,7 +98,8 @@
 								<img
 									src="./assets/trainer2.svg"
 									alt="An image of Jane Doe, she is a trainer in the gym"
-									class="trainer-img" />
+									class="trainer-img"
+									loading="lazy" />
 							</div>
 							<h4 class="trainer-name">Trainer #2</h4>
 							<figcaption class="trainer-desc">
@@ -109,7 +112,8 @@
 								<img
 									src="./assets/trainer3.svg"
 									alt="An image of Joe Sixpack, the third trainer"
-									class="trainer-img" />
+									class="trainer-img"
+									loading="lazy" />
 							</div>
 							<h4 class="trainer-name">Trainer #3</h4>
 							<figcaption class="trainer-desc">
@@ -127,35 +131,40 @@
 							<img
 								src="./assets/cardio_park.jpg"
 								alt="the gym's cardio park"
-								class="service-item__img" />
+								class="service-item__img"
+								loading="lazy" />
 						</div>
 						<div class="service-item">
 							<h4 class="service-item__title">Fitness room</h4>
 							<img
 								src="./assets/fitness_room.jpg"
 								alt="the gym's fitness room"
-								class="service-item__img" />
+								class="service-item__img"
+								loading="lazy" />
 						</div>
 						<div class="service-item">
 							<h4 class="service-item__title">Yoga</h4>
 							<img
 								src="./assets/yoga.jpg"
 								alt="the gym's yoga class"
-								class="service-item__img" />
+								class="service-item__img"
+								loading="lazy" />
 						</div>
 						<div class="service-item">
 							<h4 class="service-item__title">Personal training</h4>
 							<img
 								src="./assets/personal_training.jpg"
 								alt="a men with a personal trainer"
-								class="service-item__img" />
+								class="service-item__img"
+								loading="lazy" />
 						</div>
 						<div class="service-item">
 							<h4 class="service-item__title">Web & local shop</h4>
 							<img
 								src="./assets/shop.jpg"
 								alt="the gym's local shop"
-								class="service-item__img" />
+								class="service-item__img"
+								loading="lazy" />
 						</div>
 					</div>
 				</section>
@@ -185,9 +194,7 @@
 								<li class="membership-card__advantage">Get a massage</li>
 								<li class="membership-card__advantage">20% off in our Shop</li>
 							</ul>
-							<a href="#" class="membership-card__order-btn"
-								>Start 1 week free trial</a
-							>
+							<a href="#" class="membership-card__order-btn">Purchuse now</a>
 						</div>
 						<div class="membership-card">
 							<h4 class="membership-card__type">Platinum</h4>
@@ -208,9 +215,7 @@
 								<li class="membership-card__advantage">Get a massage</li>
 								<li class="membership-card__advantage">20% off in our Shop</li>
 							</ul>
-							<a href="#" class="membership-card__order-btn"
-								>Start 1 week free trial</a
-							>
+							<a href="#" class="membership-card__order-btn">Purchuse now</a>
 						</div>
 						<div class="membership-card">
 							<h4 class="membership-card__type">Gold</h4>
@@ -231,9 +236,7 @@
 								<li class="membership-card__advantage">Get a massage</li>
 								<li class="membership-card__advantage">20% off in our Shop</li>
 							</ul>
-							<a href="#" class="membership-card__order-btn"
-								>Start 1 week free trial</a
-							>
+							<a href="#" class="membership-card__order-btn">Purchuse now</a>
 						</div>
 					</div>
 				</section>
@@ -248,7 +251,11 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
 									facere explicabo numquam dignissimos? Exercitationem esse quos
 									nobis laudantium atque ea voluptatum, maiores officia
-									provident praesentium quis numquam laborum beatae ipsam.
+									provident praeLorem ipsum dolor sit amet consectetur
+									adipisicing elit. Quas facere explicabo numquam dignissimos?
+									Exercitationem esse quos nobis laudantium atque ea voluptatum,
+									maiores officia provident praesentium quis numquam laborum
+									beatae ipsam.
 								</p>
 								<aside class="news-box-content__released">
 									1 DAYS AGO - <a href="#" class="author">BY ADAM</a>
@@ -286,7 +293,7 @@
 							</section>
 						</article>
 					</section>
-					<a href="#" class="article-loader-btn">SHOW MORE</a>
+					<button class="article-loader-btn">SHOW MORE</button>
 				</section>
 				<!--
 					<section class="main-gallery">
@@ -296,13 +303,13 @@
 				<section class="main-progress">
 					<div class="progress-bar">
 						<div class="progress-bar__item">
-							300+ <span>machines owned</span>
+							<span class="bold-num">300+</span> <span class="progress-name">machines owned</span>
 						</div>
 						<div class="progress-bar__item">
-							350+ <span>happy clients</span>
+							<span class="bold-num">350+</span> <span class="progress-name">happy clients</span>
 						</div>
 						<div class="progress-bar__item">
-							100+ <span>clients a day</span>
+							<span class="bold-num">100+</span> <span class="progress-name">clients a day</span>
 						</div>
 					</div>
 				</section>
@@ -358,6 +365,5 @@
 		</div>
 
 		<script src="./js/nav.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	</body>
 </html>

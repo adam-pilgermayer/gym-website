@@ -1,6 +1,9 @@
 @use "./abstracts/" as *;
 
 
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+
 
 .navbar {
 	@include flex(center, space-between);
@@ -23,6 +26,7 @@
 
 	.burger {
 		margin-right: 30px;
+		height: 32px;
 		cursor: pointer;
 
 		.line {
@@ -54,9 +58,8 @@
 		position: absolute;
 		top: -260px;
 		overflow: hidden;
-		opacity: 0;
+		visibility: hidden;
 		width: 100%;
-		font-size: 2rem;
 		background-color: $main-bg-color;
 		box-shadow: 0 4px 4px #1a1a1a;
 		transition: all 300ms ease-in-out;
@@ -72,12 +75,44 @@
 			display: block;
 			text-align: center;
 			width: 100%;
-			font-size: $size-m;
+			font-size: $size-xs;
 		}
 	}
 
 	.toggled {
 		top: 60px;
-		opacity: 1;
+		visibility: visible;
+	}
+
+	@media (min-width: $breakpoint-tablet) { 
+		@include flex(center, space-between, row);
+		padding: 0 20px 0 10px;
+
+		.burger {
+			display: none;
+		}
+
+		.navbar-menu {
+			@include flex(center, space-between, row);
+			height: 60px;
+			position: static;
+			visibility: visible;
+			background-color: transparent;
+			box-shadow: none;
+			width: fit-content;
+
+			&__item {
+				border: none;
+			}
+
+			&__link {
+				padding: 30px 8px;
+				transition: 150ms;
+				&:hover {
+					background-color: darken($main-bg-color, 3%);
+					color: $secondary-color;
+				}
+			}
+		}
 	}
 }

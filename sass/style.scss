@@ -1,21 +1,21 @@
 @use "./abstracts/" as *;
 
+
 .footr-logo__img {
 	display: none;
 }
 
 html {
-	font-family: $main-font, sans-serif;
-	background-color: $main-bg-color;
-	background: {
-		image: url('../assets/Hexagon.svg');
-		position: fixed;
-		size: contain;
-	}
-	color: $main-text-color;
-	font-size: 10px;
+
+	font-size: 12px;
 	min-width: 300px;
 	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $main-font, sans-serif;
+	background-color: $main-bg-color;
+	color: $main-text-color;
 }
 
 a {
@@ -47,6 +47,7 @@ a {
 		&-welcome {
 			font-size: $size-l;
 			font-weight: 600;
+			margin-bottom: 10px;
 
 			span {
 				text-transform: uppercase;
@@ -186,7 +187,10 @@ a {
 			}
 
 			&__img {
-				width: 260px;
+				content-visibility: auto;
+				width: 100%;
+				max-width: 400px;
+				object-fit: cover;
 				border-radius: 2px;
 				box-shadow: 0 0 8px lighten($main-bg-color, 20);
 			}
@@ -206,10 +210,15 @@ a {
 		}
 
 		.membership-card {
-			width: 300px;
-			height: 470px;
+			width: 100%;
+			max-width: 340px;
+			padding: 20px 0 40px;
 			background-color: darken($main-bg-color, 3);
-			padding: 10px;
+			transition: 300ms;
+
+			&:hover {
+				transform: translateY(-10px);
+			}
 
 			&__type {
 				font-size: $size-m;
@@ -247,6 +256,7 @@ a {
 
 			&__order-btn {
 				text-transform: uppercase;
+				transition: 0.5s;
 			}
 
 			&:nth-child(1) {
@@ -279,6 +289,11 @@ a {
 						600,
 						2px solid $card-color-essential
 					);
+
+					&:hover {
+						background-color: $card-color-essential;
+						color: $main-bg-color;
+					}
 				}
 			}
 
@@ -303,6 +318,11 @@ a {
 						600,
 						2px solid $card-color-platinum
 					);
+
+					&:hover {
+						background-color: $card-color-platinum;
+						color: $main-bg-color;
+					}
 				}
 			}
 
@@ -333,7 +353,119 @@ a {
 						600,
 						2px solid $card-color-gold
 					);
+
+					&:hover {
+						background-color: $card-color-gold;
+						color: $main-bg-color;
+					}
 				}
+			}
+		}
+	}
+
+	.main-news {
+		.article-collector {
+			width: 100%;
+			margin: 10px auto;
+			@include flex(center, center, row, wrap);
+			gap: 20px;
+		}
+
+		.news-box {
+			width: 100%;
+			max-width: 500px;
+			height: 460px;
+			background-color: lighten($main-bg-color, 8%);
+			@include flex(center, flex-start, column);
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&__img {
+				background-image: linear-gradient(
+					rgba(173, 64, 64, 0.5),
+					rgba(54, 21, 21, 0.5),
+					rgba(196, 67, 67, 0.5)
+				);
+				display: block;
+				height: 50%;
+				width: 100%;
+			}
+
+			&-content {
+				margin: 26px;
+				text-align: left;
+				line-height: 16px;
+
+				&__title {
+					font-size: $size-s;
+				}
+
+				&__details {
+					font-size: calc($size-xs - 30%);
+					margin: 20px 0 40px 0;
+					display: -webkit-box;
+					-webkit-line-clamp: 5;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
+
+				&__released {
+					font-size: calc($size-xs - 50%);
+				}
+
+				.author {
+					text-decoration: underline;
+					color: $secondary-color;
+				}
+			}
+		}
+
+		.article-loader-btn {
+			margin: 24px 0;
+			font-family: $main-font;
+			cursor: pointer;
+			@include btn(
+				darken($secondary-color, 12),
+				$main-text-color,
+				10px,
+				10px,
+				2px,
+				2px 2px 4px darken($main-bg-color, 10),
+				$size-s,
+				600
+			);
+		}
+	}
+
+	.main-progress {
+		margin: 80px 0;
+		.progress-bar {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+				url("../assets/Sprinkle.svg");
+			display: none;
+			margin: 0 auto;
+			max-width: 900px;
+			height: 150px;
+
+			&__item {
+				font-size: $size-l;
+			}
+
+			.bold-num {
+				font-weight: 700;
+				display: block;
+			}
+
+			.progress-name {
+				font-weight: 500;
+				display: block;
+				padding-top: 16px;
+			}
+
+			@media (min-width: 900px) {
+				@include flex(center, space-evenly, row);
 			}
 		}
 	}
