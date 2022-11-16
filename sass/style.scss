@@ -80,8 +80,8 @@ a {
 			transition: 150ms;
 
 			&:hover {
-                background-color: darken($secondary-color, 20%);
-            }
+				background-color: darken($secondary-color, 20%);
+			}
 		}
 	}
 }
@@ -129,6 +129,22 @@ a {
 		&__img {
 			width: 100%;
 			max-width: 400px;
+		}
+
+		@media (min-width: $breakpoint-tablet) {
+			.flex-container {
+				flex-direction: row;
+				max-width: 900px;
+				gap: 40px;
+			}
+
+			&__text {
+				flex: 1 1 50%;
+			}
+
+			&__img {
+				flex: 1 1 50%;
+			}
 		}
 	}
 

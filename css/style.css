@@ -120,6 +120,19 @@ a {
   width: 100%;
   max-width: 400px;
 }
+@media (min-width: 992px) {
+  .main-content .main-about .flex-container {
+    flex-direction: row;
+    max-width: 900px;
+    gap: 40px;
+  }
+  .main-content .main-about__text {
+    flex: 1 1 50%;
+  }
+  .main-content .main-about__img {
+    flex: 1 1 50%;
+  }
+}
 .main-content .main-team .flex-container {
   display: flex;
   align-items: center;

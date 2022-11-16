@@ -3,118 +3,119 @@
 .footr {
 	@include flex(center, center, column);
 	padding: 20px;
+	margin: 0 auto;
+	box-shadow: 0 0px 4px $secondary-color;
 
 	font-family: $secondary-font;
 	font-weight: 300;
 
-
 	&-logo__box {
-		width: 150px;
-		margin: 0 auto;
+		width: 200px;
 	}
 
 	&-logo__img {
-		width: 150px;
+		width: 200px;
 	}
 
-	&-col {
-		padding: 14px;
+	&-content {
+		.footr-col {
+			padding: 14px;
 
-		&__title {
-			width: max-content;
-			margin: 50px auto 20px;
-			font-size: $size-xs;
-		}
-
-		.contact-btn {
-			@include btn(
-				darken($secondary-color, 12),
-				$main-text-color,
-				10px,
-				18px,
-				2px,
-				2px 2px 4px darken($main-bg-color, 10),
-				$size-s,
-				600
-			);
-			display: block;
-			width: max-content;
-			margin: 30px auto 0;
-			transition: 150ms;
-
-			&:hover {
-				background-color: darken($secondary-color, 20%);
+			&__title {
+				width: max-content;
+				margin: 50px auto 20px;
+				font-size: $size-xs;
 			}
-		}
-	}
 
-	&-info {
-		&__item {
-			@include flex(center, flex-start, row);
-			margin-left: 10px;
-			gap: 12px;
-		}
-
-		.info-logo {
-			display: block;
-			padding: 10px;
-		}
-
-		.info-content {
-			font-size: $size-2xs;
-
-			.working-hours {
-				padding: 4px;
-			}
-		}
-	}
-
-	.payment-methods {
-		@include flex(center, center, row);
-		gap: 4rem;
-		margin: 2rem;
-	}
-
-	&-menu {
-		width: max-content;
-		margin: 6px auto;
-
-		&__item {
-			font-size: $size-2xs;
-			text-align: center;
-			padding: 6px;
-		}
-	}
-
-	.social-links {
-		@include flex(center, center, row);
-		gap: 2rem;
-
-		.social-link {
-			path {
+			.contact-btn {
+				@include btn(
+					darken($secondary-color, 12),
+					$main-text-color,
+					10px,
+					18px,
+					2px,
+					2px 2px 4px darken($main-bg-color, 10),
+					$size-s,
+					600
+				);
+				font-family: $main-font;
+				display: block;
+				width: max-content;
+				margin: 30px auto 0;
 				transition: 150ms;
+
+				&:hover {
+					background-color: darken($secondary-color, 20%);
+				}
+			}
+		}
+
+		.footr-info {
+			&__item {
+				@include flex(center, flex-start, row);
+				margin-left: 10px;
+				gap: 12px;
 			}
 
-			&:hover {
+			.info-logo {
+				display: block;
+				padding: 10px;
+			}
+
+			.info-content {
+				font-size: $size-2xs;
+
+				.working-hours {
+					padding: 4px;
+				}
+			}
+		}
+
+		.payment-methods {
+			@include flex(center, center, row);
+			gap: 4rem;
+			margin: 2rem;
+		}
+
+		.footr-menu {
+			width: max-content;
+			margin: 6px auto;
+
+			&__item {
+				font-size: $size-2xs;
+				text-align: center;
+				padding: 6px;
+			}
+		}
+
+		.social-links {
+			@include flex(center, center, row);
+			gap: 2rem;
+
+			.social-link {
 				path {
-					fill: $secondary-color;
+					transition: 150ms;
+				}
+
+				&:hover {
+					path {
+						fill: $secondary-color;
+					}
 				}
 			}
 		}
 	}
 
-	@media (min-width: $breakpoint-1080) {
-		@include flex(flex-start, center, row);
-        flex-basis: 20px;
-        width: 100%;
-        max-width: 1300px;
-        margin: 20rem auto 0;
-        
+	@media (min-width: $breakpoint-tablet) {
+		&-logo__box {
+			flex: 1 1 50%;
+		}
 
-        &-logo__box {
-            margin: 0;
-        }
-    }
+		.footr-content {
+			@include flex(center, center, row, wrap);
+			flex: 1 1 50%;
+		}
+	}
 }
 
 .copyright {
