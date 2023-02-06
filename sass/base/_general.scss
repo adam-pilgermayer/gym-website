@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+html {
+    scroll-behavior: $smooth-scroll;
+    min-width: $min-width;
+}
+
+body {
+    font-family: $ff-main;
+	font-weight: $fw-regular;
+	font-size: $base-font-size;
+    color: $color-white;
+    background-color: $color-black;
+}
+
+a {
+    color: $color-orange-light;
+    text-decoration: none;
+}
+
+a:is(:hover, :focus) {
+    color: $color-orange-dark;
+}
+
+li {
+    margin-left: $size-4;
+    list-style: $base-list-style;
+}

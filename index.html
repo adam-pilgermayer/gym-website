@@ -4,477 +4,148 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Adam's GYM - Home</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/nav.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
+		<title>Adam's Gym- Home</title>
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
-		<nav class="navbar">
-			<a href="index.html" class="navbar-logo__box"></a>
-			<ul class="navbar-menu">
-				<li class="navbar-menu__item">
-					<a href="#nav-about" class="navbar-menu__link">About</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#nav-team" class="navbar-menu__link">Team</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#nav-services" class="navbar-menu__link">Services</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#nav-membership" class="navbar-menu__link">Membership</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Schedule</a>
-				</li>
-				<li class="navbar-menu__item">
-					<a href="#" class="navbar-menu__link">Contact</a>
-				</li>
-			</ul>
-			<div class="burger">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</div>
-		</nav>
-		<header class="hedr">
-			<div class="hedr-hero">
-				<section>
-					<h1 class="hedr-hero-welcome">Welcome to Adam's <span>gym</span></h1>
-					<h2 class="hedr-hero-location">Anywhere, Any street 2</h2>
-				</section>
-				<section>
-					<p class="hedr-hero-promo">
-						Start your journey with a <em>1 week free</em> trial
-					</p>
-					<a href="#" class="btn-promo">Get Started</a>
-				</section>
+		<nav class="navbar"></nav>
+		<header class="header">
+			<div class="header__carousel">
+				<ul class="header__carousel-items">
+					<li class="header__carousel-item">
+						<img src="#" alt="#" class="header__carousel-image" />
+						<div class="header__carousel-text">
+							<h3 class="header__carousel-title">Title</h3>
+							<p class="header__carousel-description">Description</p>
+							<a href="#" class="header__carousel-btn">Button</a>
+						</div>
+					</li>
+					<li class="header__carousel-item">
+						<img src="#" alt="#" class="header__carousel-image" />
+						<div class="header__carousel-text">
+							<h3 class="header__carousel-title">Title</h3>
+							<p class="header__carousel-description">Description</p>
+							<a href="#" class="header__carousel-btn">Button</a>
+						</div>
+					</li>
+					<li class="header__carousel-item">
+						<img src="#" alt="#" class="header__carousel-image" />
+						<div class="header__carousel-text">
+							<h3 class="header__carousel-title">Title</h3>
+							<p class="header__carousel-description">Description</p>
+							<a href="#" class="header__carousel-btn">Button</a>
+						</div>
+					</li>
+					<li class="header__carousel-item">
+						<img src="#" alt="#" class="header__carousel-image" />
+						<div class="header__carousel-text">
+							<h3 class="header__carousel-title">Title</h3>
+							<p class="header__carousel-description">Description</p>
+							<a href="#" class="header__carousel-btn">Button</a>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</header>
-		<div class="wrapper">
-			<main class="main-content">
-				<section id="nav-about" class="main-about">
-					<h3 class="main-title">About</h3>
-					<div class="flex-container">
-						<p class="main-about__text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Laboriosam, labore? Libero, doloribus sed. Nesciunt necessitatibus
-							quos aspernatur saepe maxime repudiandae corporis optio quaerat
-							ullam. Perferendis magni eum odit ad distinctio nihil repellendus,
-							quasi est voluptas exercitationem repellat numquam, dolorem
-							explicabo odio eius molestiae tenetur? Architecto aliquid ratione
-							atque qui nihil!
-						</p>
-						<img
-							src="./assets/our_gym.jpg"
-							alt="our gym with full of modern machines"
-							class="main-about__img"
-							loading="lazy" />
+		<main class="cont">
+			<section class="cont__sect">
+				<!-- Gym name -->
+				<h1 class="cont__gym-title">Adam's GYM</h1>
+			</section>
+			<section class="cont__sect">
+				<!-- Motivation quote -->
+				<div class="cont__parallax-quote-box">
+					<img src="#" alt="#" class="content__parallax-img" />
+					<blockquote class="cont__quote">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+						commodi.
+					</blockquote>
+				</div>
+			</section>
+			<section class="cont__sect">
+				<!-- Gym information -->
+				<section class="cont__short-infos">
+					<div class="cont__short-info-btns">
+						<!-- Hidden on mobile devices -->
+						<a href="#" class="cont__open-info-btn">Open Info #1</a>
+						<a href="#" class="cont__open-info-btn">Open Info #2</a>
 					</div>
-				</section>
-				<section id="nav-team" class="main-team">
-					<h3 class="main-title">Team</h3>
-					<div class="flex-container">
-						<figure class="trainer">
-							<div class="trainer-img-box">
-								<img
-									src="./assets/trainer1.svg"
-									alt="An image of John Doe, our very first trainer"
-									class="trainer-img"
-									loading="lazy" />
-							</div>
-							<h4 class="trainer-name">Trainer #1</h4>
-							<figcaption class="trainer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-								ullam.
-							</figcaption>
-						</figure>
-						<figure class="trainer">
-							<div class="trainer-img-box">
-								<img
-									src="./assets/trainer2.svg"
-									alt="An image of Jane Doe, she is a trainer in the gym"
-									class="trainer-img"
-									loading="lazy" />
-							</div>
-							<h4 class="trainer-name">Trainer #2</h4>
-							<figcaption class="trainer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-								ullam.
-							</figcaption>
-						</figure>
-						<figure class="trainer">
-							<div class="trainer-img-box">
-								<img
-									src="./assets/trainer3.svg"
-									alt="An image of Joe Sixpack, the third trainer"
-									class="trainer-img"
-									loading="lazy" />
-							</div>
-							<h4 class="trainer-name">Trainer #3</h4>
-							<figcaption class="trainer-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-								ullam.
-							</figcaption>
-						</figure>
-					</div>
-				</section>
-				<section id="nav-services" class="main-services">
-					<h3 class="main-title">Services</h3>
-					<div class="flex-container">
-						<div class="service-item">
-							<h4 class="service-item__title">Cardio park</h4>
-							<img
-								src="./assets/cardio_park.jpg"
-								alt="the gym's cardio park"
-								class="service-item__img"
-								loading="lazy" />
-						</div>
-						<div class="service-item">
-							<h4 class="service-item__title">Fitness room</h4>
-							<img
-								src="./assets/fitness_room.jpg"
-								alt="the gym's fitness room"
-								class="service-item__img"
-								loading="lazy" />
-						</div>
-						<div class="service-item">
-							<h4 class="service-item__title">Yoga</h4>
-							<img
-								src="./assets/yoga.jpg"
-								alt="the gym's yoga class"
-								class="service-item__img"
-								loading="lazy" />
-						</div>
-						<div class="service-item">
-							<h4 class="service-item__title">Personal training</h4>
-							<img
-								src="./assets/personal_training.jpg"
-								alt="a men with a personal trainer"
-								class="service-item__img"
-								loading="lazy" />
-						</div>
-						<div class="service-item">
-							<h4 class="service-item__title">Web & local shop</h4>
-							<img
-								src="./assets/shop.jpg"
-								alt="the gym's local shop"
-								class="service-item__img"
-								loading="lazy" />
-						</div>
-					</div>
-				</section>
-				<section id="nav-membership" class="main-membership">
-					<h3 class="main-title">Membership</h3>
-
-					<p class="membership-desc">
-						Choose any of the membership plans and get a 1 week FREE TRIAL!
-					</p>
-					<div class="flex-container">
-						<div class="membership-card">
-							<h4 class="membership-card__type">Essential</h4>
-							<p class="membership-card__price">€<span>30</span>/month</p>
-							<ul class="membership-card__advantages">
-								<li class="membership-card__advantage">
-									Access to all equipments
-								</li>
-								<li class="membership-card__advantage">
-									Access to locker room
-								</li>
-								<li class="membership-card__advantage">Free WiFi</li>
-								<li class="membership-card__advantage">Free parking</li>
-								<li class="membership-card__advantage">
-									Access to our classes
-								</li>
-								<li class="membership-card__advantage">Use of Sauna</li>
-								<li class="membership-card__advantage">Get a massage</li>
-								<li class="membership-card__advantage">20% off in our Shop</li>
-							</ul>
-							<a href="#" class="membership-card__order-btn">Purchuse now</a>
-						</div>
-						<div class="membership-card">
-							<h4 class="membership-card__type">Platinum</h4>
-							<p class="membership-card__price">€<span>90</span>/month</p>
-							<ul class="membership-card__advantages">
-								<li class="membership-card__advantage">
-									Access to all equipments
-								</li>
-								<li class="membership-card__advantage">
-									Access to locker room
-								</li>
-								<li class="membership-card__advantage">Free WiFi</li>
-								<li class="membership-card__advantage">Free parking</li>
-								<li class="membership-card__advantage">
-									Access to our classes
-								</li>
-								<li class="membership-card__advantage">Use of Sauna</li>
-								<li class="membership-card__advantage">Get a massage</li>
-								<li class="membership-card__advantage">20% off in our Shop</li>
-							</ul>
-							<a href="#" class="membership-card__order-btn">Purchuse now</a>
-						</div>
-						<div class="membership-card">
-							<h4 class="membership-card__type">Gold</h4>
-							<p class="membership-card__price">€<span>60</span>/month</p>
-							<ul class="membership-card__advantages">
-								<li class="membership-card__advantage">
-									Access to all equipments
-								</li>
-								<li class="membership-card__advantage">
-									Access to locker room
-								</li>
-								<li class="membership-card__advantage">Free WiFi</li>
-								<li class="membership-card__advantage">Free parking</li>
-								<li class="membership-card__advantage">
-									Access to our classes
-								</li>
-								<li class="membership-card__advantage">Use of Sauna</li>
-								<li class="membership-card__advantage">Get a massage</li>
-								<li class="membership-card__advantage">20% off in our Shop</li>
-							</ul>
-							<a href="#" class="membership-card__order-btn">Purchuse now</a>
-						</div>
-					</div>
-				</section>
-				<!-- <section class="main-news">
-					<h3 class="main-title">News</h3>
-					<section class="article-collector">
-						<article class="news-box">
-							<img src="#" alt="Placeholder text" class="news-box__img" />
-							<section class="news-box-content">
-								<h3 class="news-box-content__title">New title</h3>
-								<p class="news-box-content__details">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-									facere explicabo numquam dignissimos? Exercitationem esse quos
-									nobis laudantium atque ea voluptatum, maiores officia
-									provident praeLorem ipsum dolor sit amet consectetur
-									adipisicing elit. Quas facere explicabo numquam dignissimos?
-									Exercitationem esse quos nobis laudantium atque ea voluptatum,
-									maiores officia provident praesentium quis numquam laborum
-									beatae ipsam.
-								</p>
-								<aside class="news-box-content__released">
-									1 DAYS AGO - <a href="#" class="author">BY ADAM</a>
-								</aside>
-							</section>
-						</article>
-						<article class="news-box">
-							<img src="#" alt="Placeholder text" class="news-box__img" />
-							<section class="news-box-content">
-								<h3 class="news-box-content__title">New title</h3>
-								<p class="news-box-content__details">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-									facere explicabo numquam dignissimos? Exercitationem esse quos
-									nobis laudantium atque ea voluptatum, maiores officia
-									provident praesentium quis numquam laborum beatae ipsam.
-								</p>
-								<aside class="news-box-content__released">
-									3 DAYS AGO - <a href="#" class="author">BY ADAM</a>
-								</aside>
-							</section>
-						</article>
-						<article class="news-box">
-							<img src="#" alt="Placeholder text" class="news-box__img" />
-							<section class="news-box-content">
-								<h3 class="news-box-content__title">New title</h3>
-								<p class="news-box-content__details">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-									facere explicabo numquam dignissimos? Exercitationem esse quos
-									nobis laudantium atque ea voluptatum, maiores officia
-									provident praesentium quis numquam laborum beatae ipsam.
-								</p>
-								<aside class="news-box-content__released">
-									10 DAYS AGO - <a href="#" class="author">BY ADAM</a>
-								</aside>
-							</section>
-						</article>
-					</section>
-					<button class="article-loader-btn">SHOW MORE</button>
-				</section> -->
-				<!--
-					<section class="main-gallery">
-					<h3 class="main-title">Gallery</h3>
-				</section>
-				-->
-				<section class="main-progress">
-					<div class="progress-bar">
-						<div class="progress-bar__item">
-							<span class="bold-num">300+</span>
-							<span class="progress-name">machines owned</span>
-						</div>
-						<div class="progress-bar__item">
-							<span class="bold-num">350+</span>
-							<span class="progress-name">happy clients</span>
-						</div>
-						<div class="progress-bar__item">
-							<span class="bold-num">100+</span>
-							<span class="progress-name">clients a day</span>
-						</div>
-					</div>
-				</section>
-			</main>
-		</div>
-		<footer class="footr">
-			<div class="footr-logo__box">
-				<a href="index.html">
-					<img
-						class="footr-logo__img"
-						src="./assets/logo.png"
-						alt="our gym's logo" />
-				</a>
-			</div>
-			<section class="footr-content">
-				<section class="footr-col">
-					<h3 class="footr-col__title">INFORMATION</h3>
-					<section class="footr-info">
-						<div class="footr-info__item">
-							<span class="info-logo"
-								><img src="./assets/location.svg" alt=""
-							/></span>
-							<div class="info-content">Anywhere, Any street 2</div>
-						</div>
-						<div class="footr-info__item">
-							<span class="info-logo"
-								><img src="./assets/phone.svg" alt=""
-							/></span>
-							<div class="info-content">(123) 456 7890</div>
-						</div>
-						<div class="footr-info__item">
-							<span class="info-logo"
-								><img src="./assets/time.svg" alt=""
-							/></span>
-							<div class="info-content">
-								<p class="working-hours">Mon - Fri: 6AM - 10PM</p>
-								<p class="working-hours">Sat -Sun: 6AM - 8PM</p>
-								<p class="working-hours">On Holidays: 6AM - 4PM</p>
-							</div>
-						</div>
-					</section>
-					<a href="./contact.html" class="contact-btn">CONTACT</a>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">PAYMENT METHODS</h3>
-					<div class="payment-methods">
-						<figure class="payment-method">
-							<img src="./assets/visa.svg" alt="you can pay with visa" />
-						</figure>
-						<figure class="payment-method">
-							<img
-								src="./assets/mastercard.svg"
-								alt="you can pay with mastercard" />
-						</figure>
-					</div>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">OVERVIEW</h3>
-					<ul class="footr-menu">
-						<li class="footr-menu__item">
-							<a href="#">About</a>
-						</li>
-						<li class="footr-menu__item">
-							<a href="#">Team</a>
-						</li>
-						<li class="footr-menu__item">
-							<a href="#">Services</a>
-						</li>
-						<li class="footr-menu__item">
-							<a href="#">Membership</a>
-						</li>
-						<li class="footr-menu__item">
-							<a href="#">Contact</a>
-						</li>
-						<li class="footr-menu__item">
-							<a href="#">Gallery</a>
-						</li>
-					</ul>
-				</section>
-				<section class="footr-col">
-					<h3 class="footr-col__title">FOLLOW US</h3>
-					<div class="social-links">
-						<figure class="social">
-							<a href="#" class="social-link"
-								><svg
-									width="31"
-									height="30"
-									viewBox="0 0 31 30"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M15.25 2.55C8.375 2.55 2.75 8.1625 2.75 15.075C2.75 21.325 7.325 26.5125 13.3 27.45V18.7H10.125V15.075H13.3V12.3125C13.3 9.175 15.1625 7.45 18.025 7.45C19.3875 7.45 20.8125 7.6875 20.8125 7.6875V10.775H19.2375C17.6875 10.775 17.2 11.7375 17.2 12.725V15.075H20.675L20.1125 18.7H17.2V27.45C20.1456 26.9848 22.8278 25.4819 24.7624 23.2126C26.6971 20.9433 27.7567 18.0571 27.75 15.075C27.75 8.1625 22.125 2.55 15.25 2.55V2.55Z"
-										fill="white" /></svg
-							></a>
-						</figure>
-						<figure class="social">
-							<a href="#" class="social-link"
-								><svg
-									width="31"
-									height="30"
-									viewBox="0 0 31 30"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M10 2.5H20.5C24.5 2.5 27.75 5.75 27.75 9.75V20.25C27.75 22.1728 26.9862 24.0169 25.6265 25.3765C24.2669 26.7362 22.4228 27.5 20.5 27.5H10C6 27.5 2.75 24.25 2.75 20.25V9.75C2.75 7.82718 3.51384 5.98311 4.87348 4.62348C6.23311 3.26384 8.07718 2.5 10 2.5M9.75 5C8.55653 5 7.41193 5.47411 6.56802 6.31802C5.72411 7.16193 5.25 8.30653 5.25 9.5V20.5C5.25 22.9875 7.2625 25 9.75 25H20.75C21.9435 25 23.0881 24.5259 23.932 23.682C24.7759 22.8381 25.25 21.6935 25.25 20.5V9.5C25.25 7.0125 23.2375 5 20.75 5H9.75ZM21.8125 6.875C22.2269 6.875 22.6243 7.03962 22.9174 7.33265C23.2104 7.62567 23.375 8.0231 23.375 8.4375C23.375 8.8519 23.2104 9.24933 22.9174 9.54235C22.6243 9.83538 22.2269 10 21.8125 10C21.3981 10 21.0007 9.83538 20.7076 9.54235C20.4146 9.24933 20.25 8.8519 20.25 8.4375C20.25 8.0231 20.4146 7.62567 20.7076 7.33265C21.0007 7.03962 21.3981 6.875 21.8125 6.875ZM15.25 8.75C16.9076 8.75 18.4973 9.40848 19.6694 10.5806C20.8415 11.7527 21.5 13.3424 21.5 15C21.5 16.6576 20.8415 18.2473 19.6694 19.4194C18.4973 20.5915 16.9076 21.25 15.25 21.25C13.5924 21.25 12.0027 20.5915 10.8306 19.4194C9.65848 18.2473 9 16.6576 9 15C9 13.3424 9.65848 11.7527 10.8306 10.5806C12.0027 9.40848 13.5924 8.75 15.25 8.75M15.25 11.25C14.2554 11.25 13.3016 11.6451 12.5983 12.3483C11.8951 13.0516 11.5 14.0054 11.5 15C11.5 15.9946 11.8951 16.9484 12.5983 17.6517C13.3016 18.3549 14.2554 18.75 15.25 18.75C16.2446 18.75 17.1984 18.3549 17.9017 17.6517C18.6049 16.9484 19 15.9946 19 15C19 14.0054 18.6049 13.0516 17.9017 12.3483C17.1984 11.6451 16.2446 11.25 15.25 11.25Z"
-										fill="white" /></svg
-							></a>
-						</figure>
-						<figure class="social">
-							<a href="#" class="social-link"
-								><svg
-									width="35"
-									height="35"
-									viewBox="0 0 35 35"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g filter="url(#filter0_d_6_20)">
-										<path
-											d="M30.325 7.5C29.3625 7.9375 28.325 8.225 27.25 8.3625C28.35 7.7 29.2 6.65 29.6 5.3875C28.5625 6.0125 27.4125 6.45 26.2 6.7C25.2125 5.625 23.825 5 22.25 5C19.3125 5 16.9125 7.4 16.9125 10.3625C16.9125 10.7875 16.9625 11.2 17.05 11.5875C12.6 11.3625 8.63749 9.225 5.99999 5.9875C5.53749 6.775 5.27499 7.7 5.27499 8.675C5.27499 10.5375 6.21249 12.1875 7.66249 13.125C6.77499 13.125 5.94999 12.875 5.22499 12.5V12.5375C5.22499 15.1375 7.07499 17.3125 9.52499 17.8C8.7384 18.0153 7.91261 18.0452 7.11249 17.8875C7.452 18.9531 8.11691 19.8855 9.01376 20.5537C9.91061 21.2218 10.9943 21.5921 12.1125 21.6125C10.217 23.113 7.86748 23.9241 5.44999 23.9125C5.02499 23.9125 4.59999 23.8875 4.17499 23.8375C6.54999 25.3625 9.37499 26.25 12.4 26.25C22.25 26.25 27.6625 18.075 27.6625 10.9875C27.6625 10.75 27.6625 10.525 27.65 10.2875C28.7 9.5375 29.6 8.5875 30.325 7.5V7.5Z"
-											fill="white" />
-									</g>
-									<defs>
-										<filter
-											id="filter0_d_6_20"
-											x="-1.75"
-											y="0"
-											width="38"
-											height="38"
-											filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB">
-											<feFlood flood-opacity="0" result="BackgroundImageFix" />
-											<feColorMatrix
-												in="SourceAlpha"
-												type="matrix"
-												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-												result="hardAlpha" />
-											<feOffset dy="4" />
-											<feGaussianBlur stdDeviation="2" />
-											<feComposite in2="hardAlpha" operator="out" />
-											<feColorMatrix
-												type="matrix"
-												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-											<feBlend
-												mode="normal"
-												in2="BackgroundImageFix"
-												result="effect1_dropShadow_6_20" />
-											<feBlend
-												mode="normal"
-												in="SourceGraphic"
-												in2="effect1_dropShadow_6_20"
-												result="shape" />
-										</filter>
-									</defs></svg
-							></a>
-						</figure>
-					</div>
+					<article class="cont__short-info-box show">
+						<img src="#" alt="#" class="cont__short-info-img" />
+						<section class="cont__short-info-txtbox">
+							<p class="cont__short-info-txt">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Facere, pariatur.
+							</p>
+							<a href="#" class="cont__open-page-btn"
+								>Take a look at our plans</a
+							>
+						</section>
+					</article>
+					<article class="cont__short-info-box">
+						<!-- flex direction: reverse -->
+						<img src="#" alt="#" class="cont__short-info-img" />
+						<section class="cont__short-info-txtbox">
+							<p class="cont__short-info-txt">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Facere, pariatur.
+							</p>
+							<a href="#" class="cont__open-page-btn"
+								>Take a look at our classes</a
+							>
+						</section>
+					</article>
 				</section>
 			</section>
-		</footer>
-		<p class="copyright">Adam Pilgermayer &copy; 2022</p>
-
-		<script src="./js/nav.js"></script>
+			<section class="cont__sect">
+				<!-- Services -->
+				<section class="cont__services">
+					<section class="cont__service-container">
+						<img src="#" alt="#" class="service" />
+						<div class="shade1"></div>
+					</section>
+					<section class="cont__service-container">
+						<img src="#" alt="#" class="service" />
+						<div class="shade1"></div>
+					</section>
+					<section class="cont__service-container">
+						<img src="#" alt="#" class="service" />
+						<div class="shade1"></div>
+					</section>
+					<section class="cont__service-container">
+						<img src="#" alt="#" class="service" />
+						<div class="shade1"></div>
+					</section>
+					<section class="cont__service-container">
+						<img src="#" alt="#" class="service" />
+						<div class="shade1"></div>
+					</section>
+				</section>
+			</section>
+			<section class="cont__sect">
+				<!-- Contact, Location /w map -->
+				<section class="cont__location">
+					<div class="cont__location-contact-info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+						autem.
+					</div>
+					<img
+						src="./assets/images/contact-img.svg"
+						alt="image with contact options"
+						class="cont__contact-img" />
+				</section>
+				<section class="cont__location-map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65352652.085742734!2d-31.498041349999983!3d-1.288586049999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x65a81cae36eb8ff%3A0xa6342257f310534f!2sAtlantic%20Ocean!5e0!3m2!1sen!2shu!4v1675612683677!5m2!1sen!2shu"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</section>
+			</section>
+		</main>
+		<footer class="footer"></footer>
 	</body>
 </html>

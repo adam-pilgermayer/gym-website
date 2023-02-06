@@ -1,4 +1,8 @@
-@forward "../abstracts/colors";
-@forward "../abstracts/fonts";
-@forward "../abstracts/mixins";
-@forward "../abstracts/breakpoints";
+// This file forwards every abstract file
+
+@forward "breakpoints";
+@forward "colors";
+@forward "mixins";
+@forward "scrolling";
+@forward "sizes";
+@forward "typography";
