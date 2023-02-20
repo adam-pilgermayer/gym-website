@@ -1,28 +1,28 @@
 @use "../abstracts/" as *;
 
 html {
-    scroll-behavior: $smooth-scroll;
-    min-width: $min-width;
+	scroll-behavior: $smooth-scroll;
+	min-width: $min-width;
 }
 
 body {
-    font-family: $ff-main;
+	font-family: $ff-main;
 	font-weight: $fw-regular;
 	font-size: $base-font-size;
-    color: $color-white;
-    background-color: $color-black;
+	color: $color-white;
+	background-color: $color-black;
+	overflow: scroll !important;
 }
 
 a {
-    color: $color-orange-light;
-    text-decoration: none;
+	color: $color-white;
+	text-decoration: none;
 }
 
 a:is(:hover, :focus) {
-    color: $color-orange-dark;
+	color: $color-lightblue;
 }
 
 li {
-    margin-left: $size-4;
-    list-style: $base-list-style;
+	list-style: $base-list-style;
 }

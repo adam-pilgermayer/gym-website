@@ -23,20 +23,20 @@ body {
   font-weight: 400;
   font-size: 10px;
   color: rgb(245, 245, 245);
-  background-color: rgb(30, 30, 36);
+  background-color: #0a0b10;
+  overflow: scroll !important;
 }
 
 a {
-  color: rgb(255, 125, 39);
+  color: rgb(245, 245, 245);
   text-decoration: none;
 }
 
 a:is(:hover, :focus) {
-  color: rgb(255, 100, 10);
+  color: #54bdd5;
 }
 
 li {
-  margin-left: 1rem;
   list-style: none;
 }
 
@@ -57,4 +57,85 @@ picture,
 svg {
   display: block;
   max-width: 100%;
+}
+
+.btn1 {
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  margin-inline: 0.5rem;
+  transition: 80ms ease-in;
+}
+
+.btn1-filled {
+  background-color: #54bdd5;
+}
+.btn1-filled:is(:hover, :active) {
+  background-color: #1c6374;
+  box-shadow: inset 0 0 8px 2px #111a24;
+  color: white;
+}
+
+.btn1-outlined {
+  color: #54bdd5;
+  outline: 2px solid #54bdd5;
+  box-shadow: 0 0 4px 2px #54bdd5;
+}
+.btn1-outlined:is(:hover, :active) {
+  background-color: #1c6374;
+  box-shadow: inset 0 0 8px 2px #111a24;
+  outline: 2px solid #1c6374;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: transparent;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  text-transform: Uppercase;
+  transition: all 0.3s ease-in;
+}
+.navbar__nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.navbar__nav-list-link {
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  display: block;
+  position: relative;
+  transition: 80ms ease-in;
+}
+.navbar__nav-list-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #54bdd5;
+  transition: all 300ms ease;
+}
+:where(.navbar__nav-list-link):is(:hover, :focus)::after {
+  width: 100%;
+}
+
+.nav-scrolled {
+  padding-block: 0.75rem;
+  background: #111a24;
+  box-shadow: 0 0 5px 0 #111a24;
 }

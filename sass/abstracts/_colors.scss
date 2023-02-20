@@ -7,3 +7,15 @@ $color-orange-dark: rgba(255, 100, 10, 1);
 $color-orange-light: rgba(255, 125, 39, 1);
 $color-blue-dark: rgba(6, 133, 137, 1);
 $color-blue-light: rgba(66, 241, 247, 1);
+
+//Second color scheme
+
+$color-black: #0a0b10;
+$color-darkblue: #09131d;
+$color-blue: #111a24;
+$color-lightblue: #54bdd5;
+
+
+//darkened colors 
+
+$color-lightblue-darkened: darken($color-lightblue, 30%);
