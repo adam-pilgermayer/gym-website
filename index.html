@@ -9,69 +9,70 @@
 	</head>
 	<body>
 		<nav class="navbar">
-			<img src="#" alt="logo of our brand" class="navbar__logo" />
+			<img
+				src="./assets/images/logo.png"
+				alt="logo of our brand"
+				class="navbar__logo" />
+			<ul class="navbar-nav-list-mobile">
+
+			</ul>
+			<div class="js-hamburger hamburger">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</div>
 			<ul class="navbar__nav-list">
 				<li class="navbar__nav-list-itm">
-					<a href="#" class="navbar__nav-list-link">Home</a>
+					<a href="#" class="navbar__nav-list-link" tabindex="0">Home</a>
 				</li>
 				<li class="navbar__nav-list-itm">
-					<a href="#" class="navbar__nav-list-link">About</a>
+					<a href="#" class="navbar__nav-list-link" tabindex="0">About</a>
 				</li>
 				<li class="navbar__nav-list-itm">
-					<a href="#" class="navbar__nav-list-link">Services</a>
+					<a href="javascript:void(0)" class="navbar__nav-list-dropdown">
+						Services &#9660
+					</a>
+					<ul class="nav-dropdown">
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">Fitness Room</a>
+						</li>
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">Cardio Park</a>
+						</li>
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">Personal Training</a>
+						</li>
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">Yoga</a>
+						</li>
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">Sauna</a>
+						</li>
+						<li class="nav-dropdown-itm">
+							<a href="#" class="nav-dropdown-link" tabindex="0">BMI & Calorie Calculator</a>
+						</li>
+					</ul>
 				</li>
 				<li class="navbar__nav-list-itm">
-					<a href="#" class="navbar__nav-list-link">Contact</a>
+					<a href="#" class="navbar__nav-list-link" tabindex="0">Contact</a>
 				</li>
 			</ul>
 			<div class="navbar__service-btns">
-				<a href="#" class="navbar-service-btn btn1 btn1-filled">Membership</a>
-				<a href="#" class="navbar-service-btn btn1 btn1-outlined">Classes</a>
+				<a href="#" class="navbar__service-btn btn1 btn1-filled">Membership</a>
+				<a href="#" class="navbar__service-btn btn1 btn1-outlined">Classes</a>
 			</div>
 		</nav>
 		<header class="header">
-			<div class="header__carousel">
-				<ul class="header__carousel-items">
-					<li class="header__carousel-item">
-						<img src="#" alt="#" class="header__carousel-image" />
-						<div class="header__carousel-text">
-							<h3 class="header__carousel-title">Title</h3>
-							<p class="header__carousel-description">Description</p>
-							<a href="#" class="header__carousel-btn">Button</a>
-						</div>
-					</li>
-					<li class="header__carousel-item">
-						<img src="#" alt="#" class="header__carousel-image" />
-						<div class="header__carousel-text">
-							<h3 class="header__carousel-title">Title</h3>
-							<p class="header__carousel-description">Description</p>
-							<a href="#" class="header__carousel-btn">Button</a>
-						</div>
-					</li>
-					<li class="header__carousel-item">
-						<img src="#" alt="#" class="header__carousel-image" />
-						<div class="header__carousel-text">
-							<h3 class="header__carousel-title">Title</h3>
-							<p class="header__carousel-description">Description</p>
-							<a href="#" class="header__carousel-btn">Button</a>
-						</div>
-					</li>
-					<li class="header__carousel-item">
-						<img src="#" alt="#" class="header__carousel-image" />
-						<div class="header__carousel-text">
-							<h3 class="header__carousel-title">Title</h3>
-							<p class="header__carousel-description">Description</p>
-							<a href="#" class="header__carousel-btn">Button</a>
-						</div>
-					</li>
-				</ul>
+			<div class="header__content">
+				<div class="header__content-text">
+					<h3 class="header__content-title">Title</h3>
+					<p class="header__content-description">Description</p>
+					<a href="#" class="header__content-btn">Button</a>
+				</div>
+				<img src="./assets/images/hero.webp" alt="a muscular men doing bicep curls" class="header__content-image" />
 			</div>
 		</header>
 		<main class="cont">
-			<section class="cont__sect">
-				<!-- Gym name -->
-				<h1 class="cont__gym-title">Adam's GYM</h1>
-			</section>
 			<section class="cont__sect">
 				<!-- Motivation quote -->
 				<div class="cont__parallax-quote-box">

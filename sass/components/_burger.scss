@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+    
+	&-line {
+        display: block;
+		width: 32px;
+		height: 3px;
+		border-radius: 2px;
+		background-color: $color-lightblue;
+        transition: all 200ms ease;
+	}
+
+    &-line:nth-child(2) {
+        width: 32px;
+        opacity: 1;
+    }
+}
+
+.open-burger {
+
+    .hamburger-line:nth-child(1) {
+        transform: translate(0, 13px) rotate(45deg);
+    }
+
+    .hamburger-line:nth-child(2) {
+        width: 0;
+        opacity: 0;
+    }
+
+    .hamburger-line:nth-child(3) {
+        transform: translate(0, -13px) rotate(-45deg);
+    }
+}

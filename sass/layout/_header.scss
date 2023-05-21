@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.header {
+    width: 100%;
+    height: 100vh;
+
+    &__content {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content-image {
+        
+        filter: drop-shadow(3px 3px 12px $color-secondary) grayscale(50%);
+        
+    }
+}
